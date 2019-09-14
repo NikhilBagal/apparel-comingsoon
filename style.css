@@ -48,16 +48,22 @@ body {
 }
 button {
     position: absolute;
+    height: 100%;
+    font-size: 28px;
+    
     top: 0;
     left: 85%;
     background-color: red;
     border: 1px solid red;
-    padding: 2% 5% 2% 5%;
+   /* padding: 2% 5% 2% 5%;*/
+    width: 15%;
     border-radius: 30px;
     outline: none;
 }
 button i {
     color: #fff;
+    text-align: center;
+    height: 100%;
 }
 @media only screen and (min-width:700px){
     .container {
