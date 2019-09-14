@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    line-height: 70px;
+}
+.logo img {
+    display: block;
+    margin: 5% auto 5% 5%;
+}
+.text {
+    margin: 8% 8% auto 8%;
+}
+.text p {
+    margin-top: 5%;
+}
+.email-input {
+    width: 100%;
+    position: relative;
+    margin-top: 8%;
+}
+.email-input input[type=email]{
+    width: 90%;
+    padding: 2%;
+    border-radius: 30px;
+    border: 1px solid grey;
+    outline: none;
+}
+button {
+    position: absolute;
+    top: 0;
+    left: 85%;
+    background-color: red;
+    border: 1px solid red;
+    padding: 2% 5% 2% 5%;
+    border-radius: 30px;
+    outline: none;
+}
+button i {
+    color: #fff;
+}
+@media only screen and (min-width:700px){
+    .container {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "logo hero-img"
+            "textt hero-img"
+    }
+    .logo {
+        grid-area: logo;
+        line-height: normal;
+    }
+    .logo img {
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    .hero-img {
+        grid-area: hero-img;
+        align-self: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .text {
+        grid-area: textt;
+        display: grid;
+        padding: 0;
+        margin-left: 20%;
+        margin-top: 0;
+    }
+    .text h1 {
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
+    .hero-img img {
+        height: 100vh;
+        max-width: auto;
+}
+}
