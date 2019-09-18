@@ -32,6 +32,9 @@ body {
 .text {
     margin: 8% 8% auto 8%;
 }
+.text h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
 .text p {
     margin-top: 5%;
     font-family: 'Josefin Sans', sans-serif;
